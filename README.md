@@ -4,6 +4,9 @@
 ### A. `file`
 
 🌞 **Utiliser `file` pour déterminer le type de :**
+- la commande `ls`
+- la commande `ip`
+- un fichier `.mp3` que vous aurez téléchargé sur le disque de la VM
 
 [giz@localhost /]$ file /sbin/ip
 /sbin/ip: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=77a2f5899f0529f27d87bb29c6b84c535739e1c7, for GNU/Linux 3.2.0, stripped
