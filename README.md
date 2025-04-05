@@ -162,7 +162,7 @@ readelf -S /bin/ls
 
 Il y a 30 en-têtes de section, débutant à l'adresse de décalage 0x21f18 :
 
+mais ducoup celle-ci que tu voulais -> 
 [15] .text PROGBITS 0000000000004d50 00004d50 0000000000012532 0000000000000000 AX 0 0 16
-...
-[16] .fini PROGBITS 0000000000017284 00017284 000000000000000d 0000000000000000 AX 0 0 4
+
 
