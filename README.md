@@ -16,3 +16,29 @@
 
 [giz@localhost ~]$ file random-mp3.mp3
 random-mp3.mp3: Audio file with ID3 version 2.4.0, contains:MPEG ADTS, layer III, v1, 64 kbps, 44.1 kHz, Stereo
+
+### B. `readelf`
+
+🌞 **Utiliser `readelf` sur le programme `ls`**
+
+[giz@localhost ~]$ readelf -h /bin/ls
+En-tête ELF:
+  Magique:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+  Classe:                            ELF64
+  Données:                          complément à 2, système à octets de poids faible d'abord (little endian)
+  Version:                           1 (actuelle)
+  OS/ABI:                            UNIX - System V
+  Version ABI:                       0
+  Type:                              DYN (fichier objet partagé)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Adresse du point d'entrée:         0x6b10
+  Début des en-têtes de programme :  64 (octets dans le fichier)
+  Début des en-têtes de section :    139032 (octets dans le fichier)
+  Fanions:                           0x0
+  Taille de cet en-tête:             64 (octets)
+  Taille de l'en-tête du programme:  56 (octets)
+  Nombre d'en-tête du programme:     13
+  Taille des en-têtes de section:    64 (octets)
+  Nombre d'en-têtes de section:      30
+  Table d'index des chaînes d'en-tête de section: 29
