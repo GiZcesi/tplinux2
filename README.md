@@ -1,7 +1,7 @@
 # Recap des actions pour TP2
 
 
-## 1. Anatomy of a Program
+### A. `file`
 
 🌞 **Utiliser `file` pour déterminer le type de :**
 
