@@ -55,6 +55,8 @@ mais ducoup celle-ci que tu voulais ->
 [15] .text PROGBITS 0000000000004d50 00004d50 0000000000012532 0000000000000000 AX 0 0 16
 ````
 
+### C. `ldd`
+
 🌞 **Utiliser `ldd` sur le programme `ls`**
 
 
