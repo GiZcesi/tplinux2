@@ -117,3 +117,9 @@ Clé des fanions :
   L (ordre des liens), O (traitement supplémentaire par l'OS requis), G (groupe),
   T (TLS), C (compressé), x (inconnu), o (spécifique à l'OS), E (exclu),
   l (grand), p (processor specific)
+
+
+
+L'adresse text est :
+[16] .fini             PROGBITS         0000000000017284  00017284
+       000000000000000d  0000000000000000  AX       0     0     4
