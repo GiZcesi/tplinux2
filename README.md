@@ -152,6 +152,24 @@ write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1953root:x:0:0:root:/root:/bin/
 strace -c curl google.com
 ```
 
+## 2. sysdig
+
+### B. Use it
+
+🌞 **Utiliser `sysdig` pour tracer les *syscalls*  effectués par `ls`**
+
+quand je  sysdig -s2000 evt.type=write and proc.name=ls.
+
+J'ai un blank return jsp pourquoi :/ ...
+
+🌞 **Utiliser `sysdig` pour tracer les *syscalls*  effectués par `cat`**
+
+disons je cat "cat ````/etc/ostree/ostree-remotes.conf````
+```bash
+openat(AT_FDCWD, "/etc/ostree/ostree-remotes.conf", O_RDONLY) = 3
+write(1, "remote \"centos\" { ... }\n", 30) = 30
+```
+
 
 
 
