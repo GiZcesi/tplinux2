@@ -118,6 +118,20 @@ libc.so.6 => /lib64/libc.so.6 (0x00007f21aa712000)
 ````
 
 
+# Part II : Observe
+
+🌞 **Utiliser `strace` pour tracer l'exécution de la commande `ls`**
+
+### Commande utilisée :
+```bash
+strace ls /etc
+
+write(1, "passwd\ngroup\nhostname\nhosts\n...\n", 100) = 100
+```
+
+
+
+
 
 
 
