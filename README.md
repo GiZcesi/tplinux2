@@ -183,6 +183,7 @@ pas de retour du terminal relou jsp.... ptn
 # Part III : Service Hardening
 
 ## 1. Install NGINX
+# OK & Config
 
 🌞 **Tracer l'exécution du programme NGINX**
 
