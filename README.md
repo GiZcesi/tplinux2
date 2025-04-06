@@ -225,3 +225,6 @@ pas de retour du terminal relou jsp.... ptn
 84488 maxevents=512
 84489 next=0 pgft_maj=0 pgft_min=305 vm_size=15556 vm_rss=5560 vm_swap=0
 ```
+🌞 HARDEN
+
+J'ai des erreurs lors du hardening du service.. ?? donc pas possible de le restart :(
