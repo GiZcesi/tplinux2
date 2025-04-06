@@ -180,7 +180,47 @@ sudo sysdig -p"%evt.datetime %proc.name %evt.args" user.giz
 la meme blank quand j'essaye ````sudo sysdig -w curl_capture.scap proc.name=curl and evt.arg.url=google.com````
 pas de retour du terminal relou jsp.... ptn
 
+# Part III : Service Hardening
 
+## 1. Install NGINX
 
+🌞 **Tracer l'exécution du programme NGINX**
 
-
+```bash
+81094 res=1
+81095 flags=0
+81102 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) tuple=127.0.0.1:53862->127.0.0.1:80 queuepct=0 queuelen=0 queuemax=511
+81104
+81105
+81106 maxevents=512
+81107 res=1
+81108 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) size=1024
+81109 res=73 data=GET / HTTP/1.1..Host: 127.0.0.1..User-Agent: curl/7.76.1..Accept: */*.... tuple=127.0.0.1:53862->127.0.0.1:80
+81110
+81111 res=0 dirfd=-100(AT_FDCWD) path=/usr/share/nginx/html/index.html flags=0
+81112 dirfd=-100(AT_FDCWD) name=/usr/share/nginx/html/index.html flags=65(O_NONBLOCK|O_RDONLY) mode=0
+81113 fd=13(<f>/usr/share/nginx/html/index.html) dirfd=-100(AT_FDCWD) name=/usr/share/nginx/html/index.html flags=65(O_NONBLOCK|O_RDONLY) mode=0 dev=FD00 ino=17754904
+81114 fd=13(<f>/usr/share/nginx/html/index.html)
+81115 res=0
+81116
+81117 res=0 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) level=2(SOL_TCP) optname=0(UNKNOWN) val=.... optlen=4
+81118 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) size=240
+81119 res=240 data=HTTP/1.1 200 OK..Server: nginx/1.20.1..Date: Sun, 06 Apr 2025 01:20:33 GMT..Cont
+81120 out_fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) in_fd=13(<f>/usr/share/nginx/html/index.html) offset=0 size=7620
+81121 res=7620 offset=7620
+81122 fd=5(<f>/var/log/nginx/access.log) size=91
+81123 res=91 data=127.0.0.1 - - [06/Apr/2025:03:20:33 +0200] "GET / HTTP/1.1" 200 7620 "-" "curl/7
+81124 fd=13(<f>/usr/share/nginx/html/index.html)
+81125 res=0
+81126
+81127 res=0 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) level=2(SOL_TCP) optname=0(UNKNOWN) val=.... optlen=4
+81128 maxevents=512
+81130 next=0 pgft_maj=0 pgft_min=305 vm_size=15556 vm_rss=5560 vm_swap=0
+84483 res=1
+84484 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80) size=1024
+84485 res=0 data=NULL tuple=127.0.0.1:53862->127.0.0.1:80
+84486 fd=12(<4t>127.0.0.1:53862->127.0.0.1:80)
+84487 res=0
+84488 maxevents=512
+84489 next=0 pgft_maj=0 pgft_min=305 vm_size=15556 vm_rss=5560 vm_swap=0
+```
