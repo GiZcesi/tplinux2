@@ -59,6 +59,6 @@ mais ducoup celle-ci que tu voulais ->
 
 🌞 **Utiliser `ldd` sur le programme `ls`**
 
-
+```libc.so.6 => /lib64/libc.so.6 (0x00007f2c4e200000)```
 
 
