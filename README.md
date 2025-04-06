@@ -144,6 +144,13 @@ appel pour ecrire dans le file si jai bien compris
 write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1953root:x:0:0:root:/root:/bin/bash
 ```
 
+🌞 **Utiliser `strace` pour tracer l'exécution de `curl example.org`**
+
+
+### Commande utilisée :
+```bash
+strace -c curl google.com
+```
 
 
 
