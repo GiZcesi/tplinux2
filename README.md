@@ -107,3 +107,17 @@ et résultat :
     4d74:       e8 b7 f9 ff ff          callq  4730 <abort@plt>
     4d79:       e8 b2 f9 ff ff          callq  4730 <abort@plt>
 ``` 
+
+🌞 **Utiliser `objdump`** sur la librairie Glibc
+
+```bash
+ldd /bin/ls
+
+libc.so.6 => /lib64/libc.so.6 (0x00007f21aa712000)
+??? pas trouvé le syscall :( y'en avais trop... ????
+````
+
+
+
+
+
