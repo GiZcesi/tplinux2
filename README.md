@@ -61,4 +61,9 @@ mais ducoup celle-ci que tu voulais ->
 
 ```libc.so.6 => /lib64/libc.so.6 (0x00007f2c4e200000)```
 
+🌞 **Donner le nom ET l'identifiant unique d'un syscall qui permet à un processus de...**
+
+- lire un fichier stocké sur disque
+- écrire dans un fichier stocké sur disque
+- lancer un nouveau processus
 
