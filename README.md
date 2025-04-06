@@ -141,7 +141,7 @@ openat(AT_FDCWD, "/etc/passwd", O_RDONLY) = 3
 ```
 appel pour ecrire dans le file si jai bien compris
 ```bash
-write(1, "root:x:0:0:root:/root:/bin/bash\n", 1024) = 1024
+write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1953root:x:0:0:root:/root:/bin/bash
 ```
 
 
