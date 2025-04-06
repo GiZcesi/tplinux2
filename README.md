@@ -73,3 +73,28 @@ mais ducoup celle-ci que tu voulais ->
 - écrire dans un fichier stocké sur disque
 - lancer un nouveau processus
 
+- Lire un fichier stocké sur disque  
+  - **Nom** : `read`  
+  - **ID** : `0`  
+
+- Écrire dans un fichier stocké sur disque  
+  - **Nom** : `write`  
+  - **ID** : `1`  
+
+- Lancer un nouveau processus  
+  - **Nom** : `execve`  
+  - **ID** : `59`  
+
+---
+
+## 🔎 B. Analyse avec `objdump`
+
+L'outil `objdump` permet de désassembler un binaire pour en afficher les instructions assembleur.
+
+---
+
+### 1️⃣ Utiliser `objdump` sur la commande `ls`
+
+Commande :
+```bash
+objdump -d -j .text /bin/ls | less
