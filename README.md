@@ -175,7 +175,10 @@ write(1, "remote \"centos\" { ... }\n", 30) = 30
 
 sudo sysdig -p"%evt.datetime %proc.name %evt.args" user.giz
 
+ 🌞 **Livrez le fichier `curl.scap` dans le dépôt git de rendu**
 
+la meme blank quand j'essaye ````sudo sysdig -w curl_capture.scap proc.name=curl and evt.arg.url=google.com````
+pas de retour du terminal relou jsp.... ptn
 
 
 
