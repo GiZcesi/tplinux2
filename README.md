@@ -85,16 +85,14 @@ mais ducoup celle-ci que tu voulais ->
   - **Nom** : `execve`  
   - **ID** : `59`  
 
----
 
-## 🔎 B. Analyse avec `objdump`
+🌞 **Utiliser `objdump`** sur la commande `ls`
 
-L'outil `objdump` permet de désassembler un binaire pour en afficher les instructions assembleur.
-
----
-
-### 1️⃣ Utiliser `objdump` sur la commande `ls`
-
-Commande :
-```bash
-objdump -d -j .text /bin/ls | less
+- afficher le contenu de la section `.text`
+  - je vous laisse trouver la commande sur l'internet :D
+- mettez en évidence quelques lignes qui contiennent l'instruction `call`
+  - il devrait y en avoir plusieurs
+  - chaque `call` est un appel à une fonction, potentiellement importée *via* une librairie
+- mettez en évidence quelques lignes qui contiennent l'instruction `syscall`
+  - il y en a aucune normalement : `ls` ne contient pas directement de syscalls
+  - car il importe la Glibc, qui contient des syscalls, et les appelle avec `call`
