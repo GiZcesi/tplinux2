@@ -171,6 +171,11 @@ write(1, "remote \"centos\" { ... }\n", 30) = 30
 ```
 
 
+🌞 **Utiliser `sysdig` pour tracer les *syscalls*  effectués par votre utilisateur**
+
+sysdig -p"%evt.datetime %proc.name %evt.type %args" user.name=giz
+
+
 
 
 
