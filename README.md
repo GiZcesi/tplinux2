@@ -91,3 +91,31 @@ mais ducoup celle-ci que tu voulais ->
 Commande utilisée :
 ```bash
 objdump -d -j .text /bin/ls | less
+``` 
+
+et résultat : 
+```bash
+0000000000004d50 <_obstack_begin@@Base-0xb090>:
+    4d50:       50                      push   %rax
+    4d51:       e8 da f9 ff ff          callq  4730 <abort@plt>
+    4d56:       e8 d5 f9 ff ff          callq  4730 <abort@plt>
+    4d5b:       e8 d0 f9 ff ff          callq  4730 <abort@plt>
+    4d60:       e8 cb f9 ff ff          callq  4730 <abort@plt>
+    4d65:       e8 c6 f9 ff ff          callq  4730 <abort@plt>
+    4d6a:       e8 c1 f9 ff ff          callq  4730 <abort@plt>
+    4d6f:       e8 bc f9 ff ff          callq  4730 <abort@plt>
+    4d74:       e8 b7 f9 ff ff          callq  4730 <abort@plt>
+    4d79:       e8 b2 f9 ff ff          callq  4730 <abort@plt>
+    4d7e:       66 90                   xchg   %ax,%ax
+    4d80:       f3 0f 1e fa             endbr64
+    4d84:       41 57                   push   %r15
+    4d86:       41 56                   push   %r14
+    4d88:       41 55                   push   %r13
+    4d8a:       41 54                   push   %r12
+    4d8c:       55                      push   %rbp
+    4d8d:       53                      push   %rbx
+    4d8e:       48 83 ec 78             sub    $0x78,%rsp
+    4d92:       48 8b 2e                mov    (%rsi),%rbp
+    4d95:       64 48 8b 04 25 28 00    mov    %fs:0x28,%rax
+    4d9c:       00 00
+``` 
