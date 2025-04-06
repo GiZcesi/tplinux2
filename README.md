@@ -1,5 +1,7 @@
 # Recap des actions pour TP2
 
+## 1. Anatomy of a program
+
 
 ### A. `file`
 
